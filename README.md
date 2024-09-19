@@ -52,7 +52,9 @@ In this Lab you will use SonarQube in a docker container to analyze a vulnerable
    sonar.projectKey=vulnerableapp
    sonar.host.url=http://localhost:9000
    sonar.login=your_token_here
-   sonar.sources=.
+   sonar.sources=./src
+   sonar.language=java
+   sonar.java.binaries=.
 
    ```
    The sonar.host will probably need to be the ip address of your docker sonar server docker container.  You can get this by running the following command:
@@ -67,4 +69,8 @@ In this Lab you will use SonarQube in a docker container to analyze a vulnerable
     -e SONAR_HOST_URL="http://${SONARQUBE_URL}" --network sonarcube_default -e SONAR_SCANNER_OPTS="-Dsonar.projectKey=${YOUR_PROJECT_KEY}" -e SONAR_LOGIN="myAuthenticationToken" \
     -v "${YOUR_REPO}:/usr/src" sonarsource/sonar-scanner-cli
    ```
-   $(YOUR_REPO) will be the folder were you downloaded VulnerableApp, and $(YOUR_PROJECT_KEY) will be the token  you've created in the guy
+   ```$(YOUR_REPO)``` will be the folder were you downloaded VulnerableApp, and ```$(YOUR_PROJECT_KEY)``` will be the token  you've created in the gui.
+
+   Any errors you get, look back through your settings to make sure you have everything correctly spelled, and inputed.  When complete you should be able to the completed scan in the gui.
+
+   Research the findings you get.  Document how you would address with your development staff?  How you try to impliment SAST into your developers workflow?
