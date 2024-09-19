@@ -74,3 +74,6 @@ In this Lab you will use SonarQube in a docker container to analyze a vulnerable
    Any errors you get, look back through your settings to make sure you have everything correctly spelled, and inputed.  When complete you should be able to the completed scan in the gui.
 
    Research the findings you get.  Document how you would address with your development staff?  How you try to impliment SAST into your developers workflow?
+
+   Go to https://github.com/orgs/vulnerable-apps/repositories to look for other vulnerable apps.  This will help you understand the different type of vulnerabilities out there.  Inspect all of the apps for documentation on what vulnerabilities should be there.  Some of these vulnerabilities can't be found using SAST Tools.  Not all tools will find all vulnerabilites.  Some Vulnerabilities will only be found using DAST as well.
+   
