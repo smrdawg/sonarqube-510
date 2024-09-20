@@ -32,7 +32,7 @@ In this Lab you will use SonarQube in a docker container to analyze a vulnerable
    Now let's clone a vulnerable source code package from GitHub.  We'll use a popular vulnerable project, such as VulnerableApp.
    ```
    git clone https://github.com/SasanLabs/VulnerableApp.git
-   ct VulnerableApp
+   cd VulnerableApp
    ```
 4. Create a New Project in SonarQube
    1. In the SonarQube dashboard, click on "Create New Project".
